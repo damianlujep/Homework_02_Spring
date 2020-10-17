@@ -22,9 +22,9 @@ public class CookieController {
         Cookie cookie1 = new Cookie("user", "Jan");
         Cookie cookie2 = new Cookie("uid-c4f", "ccb1b154-c4f");
         Cookie cookie3 = new Cookie("IDE", "IntelliJ");
-        cookie1.setMaxAge(10*60*1000);
-        cookie1.setMaxAge(10*24*60*60*1000);
-        cookie1.setMaxAge(30*24*60*60*1000);
+        cookie1.setMaxAge(10*60);
+        cookie1.setMaxAge(10*24*60*60);
+        cookie1.setMaxAge(30*24*60*60);
 
         response.addCookie(cookie1);
         response.addCookie(cookie2);
