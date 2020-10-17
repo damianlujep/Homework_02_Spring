@@ -43,7 +43,7 @@
                 <td style="text-align: center"> ${list.product.name}</td>
                 <td style="text-align: center"> ${list.product.price} PLN</td>
                 <td style="text-align: center">
-                    <a href="" class="button">-</a>
+                    <a href="/decreasebyone/${list.product.name}" class="button">-</a>
                         ${list.quantity}
                     <a href="/increasebyone/${list.product.name}" class="button">+</a>
 

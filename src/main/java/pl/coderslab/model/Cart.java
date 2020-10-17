@@ -32,7 +32,17 @@ public class Cart {
 
     public void increaseQuantityByOne(CartItem cartItem){
         int i = cartItems.indexOf(cartItem);
+
         this.cartItems.get(i).setQuantity(this.cartItems.get(i).getQuantity() + 1);
+    }
+
+    public void decreaseQuantityByOne(CartItem cartItem){
+        int i = cartItems.indexOf(cartItem);
+        CartItem item = this.cartItems.get(i);
+
+        if (item.getQuantity() > 0){
+            item.setQuantity(this.cartItems.get(i).getQuantity() - 1);
+        }
     }
 
     public CartItem readFromList(CartItem cartItem){
